@@ -14,12 +14,12 @@ body {
 }
 
 a {
-  color: #8c8c8c;
+  color: #4579c8;
   text-decoration: none;
 }
 
 a:hover {
-  color: #dedede;
+  color: #3b60a1;
   text-decoration: none;
 }
 
@@ -351,13 +351,12 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
-  background-size: cover;
+  background-color: rgb(223, 223, 223);
 }
 
 #hero:before {
   content: "";
-  background: rgba(5, 13, 24, 0.3);
+  background: rgba(255, 255, 255, 0.3);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -370,6 +369,7 @@ h6 {
   position: relative;
   z-index: 2;
   min-width: 300px;
+  padding: 0 45px;
 }
 
 #hero h1 {
@@ -377,13 +377,12 @@ h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #fff;
+  color: #292929;
 }
 
 #hero p {
-  color: #fff;
-  margin-bottom: 50px;
-  font-size: 26px;
+  color: #232323;
+  font-size: 20px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -542,6 +541,14 @@ section {
 /*--------------------------------------------------------------
 # Akills
 --------------------------------------------------------------*/
+.skills .skill-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #050d18;
+}
+
 .skills .progress {
   height: 60px;
   display: block;
