@@ -810,6 +810,14 @@ section {
   padding: 0;
 }
 
+.portfolio .accordion-body .portfolio-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #050d18;
+}
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/

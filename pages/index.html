@@ -51,7 +51,7 @@
           <a href="#hero" class="nav-link scrollto active"> <span>HOME</span></a>
           <a href="#about" class="nav-link scrollto"> <span>ABOUT</span></a>
           <a href="#resume" class="nav-link scrollto"> <span>RESUME</span></a>
-          <a href="#portfolio" class="nav-link scrollto"><span>PORTFOLIO</span></a>
+          <a href="#portfolio" class="nav-link scrollto"><span>PROJECTS</span></a>
           <!--<a href="#contact" class="nav-link scrollto"> <span>Contact</span></a>-->
         </ul>
       </nav><!-- .nav-menu -->
@@ -64,7 +64,7 @@
       <div class = "row align-items-center">
         <div class="col-lg-8" data-aos="fade-left">
           <h1>Hi, I'm Bruce Siavichay.</h1>
-          <p>I'm a full-time computer science student and enjoy making <a href="#portfolio">things</a>.</p>
+          <p>I'm a full-time computer science student and I enjoy making <a href="#portfolio">things</a>.</p>
           <div class="social-links mt-3">
             <a href="https://github.com/BruceSiavichay" class="google-plus"><i class="bx bxl-github"></i></a>
             <a href="https://www.linkedin.com/in/bruce-siavichay-7567b424a/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
@@ -220,113 +220,116 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Portfolio</h2>
-            <p><a href = "https://brucesiavichay.itch.io/rgr">Download My Game Here</a></p>
+          <h2>Projects</h2>
         </div>
 
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Game</li>
-              <li data-filter=".filter-card">3D</li>
-            </ul>
+        <div class="accordion" id="projectAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" 
+                      data-bs-toggle="collapse" 
+                      data-bs-target="#project1">
+                Brain Cancer Detection Model
+              </button>
+            </h2>
+
+            <div id="project1" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <h3 class="portfolio-title">Overview</h3>
+                <p>Our objective was to develop a machine learning model that could accurately detect whether a brain MRI scan image indicated the presence of brain cancer. We achieved this using a convolutional neural network.</p>
+                <h3 class="portfolio-title">Dataset</h3>
+                <p>The dataset consisted of 800 total brain MRI images, with 408 being healthy and 392 showing signs of brain cancer.</p>
+                <p><em>Sample of Healthy and Cancerous Images:</em></p>
+                <img src="/static/assets/img/portfolio/portfolio-1.png" class="img-fluid" width="500" alt="">
+                <p>View the dataset we used <a href="https://www.kaggle.com/datasets/hamzahabib47/brain-cancer-detection-mri-images/data">here.</a></p>
+                <h3 class="portfolio-title">Tech Stack</h3>
+                <ul>
+                  <li>Python</li>
+                  <li>TensorFlow</li>
+                  <li>NumPy</li>
+                  <li>Pandas</li>
+                  <li>OpenCV</li>
+                </ul>
+                <h3 class="portfolio-title">Results</h3>
+                <p>We evaluated our model on three different metrics:</p>
+                <ul>
+                  <li>Accuracy: 0.9437</li>
+                  <li>Precision: 0.9375</li>
+                  <li>Recall: 0.9434</li>
+                </ul>
+                <img src="/static/assets/img/portfolio/portfolio-2.png" class="img-fluid" width="800" alt="">
+                <p><em>Model Accuracy and Loss During Epochs</em></p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" 
+                      data-bs-toggle="collapse" 
+                      data-bs-target="#project2">
+                Year Facts Application
+              </button>
+            </h2>
+
+            <div id="project2" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <h3 class="portfolio-title">Overview</h3>
+                <p>Created an application where users could login to view/favorite facts about specific years pulled from an API. Implemented roles so that only administrators could add or remove facts from the database. Also implemented a secure login system with user authentication and authorization to ensure only authorized users could access certain features.</p>
+                <p>View the code <a href="https://github.com/BruceSiavichay/bns24-it202-008">here</a>.</p>
+                <h3 class="portfolio-title">Tech Stack</h3>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>PHP</li>
+                  <li>MySQL</li>
+                  <li>REST API</li>
+                </ul>
+                <h3 class="portfolio-title">Screenshots</h3>
+                <img src="/static/assets/img/portfolio/portfolio-3.png" class="img-fluid" alt="">
+                <p style="text-align: center;"><em>Login Page (checks if email is taken using PHP validation)</em></p>
+                <p></p>
+                <img src="/static/assets/img/portfolio/portfolio-4.png" class="img-fluid" alt="">
+                <p style="text-align: center;"><em>Example Dashboard for users</em></p>
+                <img src="/static/assets/img/portfolio/portfolio-5.png" class="img-fluid" alt="">
+                <p style="text-align: center;"><em>Admin Page: Assign Roles to other users </em></p>
+                <img src="/static/assets/img/portfolio/portfolio-6.png" class="img-fluid" alt="">
+                <p style="text-align: center;"><em>Admin Page: Adding facts to the database</em></p>
+                <img src="/static/assets/img/portfolio/portfolio-7.png" class="img-fluid" alt="">
+                <p style="text-align: center;"><em>User page: Year page</em></p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" 
+                      data-bs-toggle="collapse" 
+                      data-bs-target="#project3">
+                Computer Vision Real-Time Guitar Chord Recognition
+              </button>
+            </h2>
+
+            <div id="project3" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <h3 class="portfolio-title">Overview</h3>
+                <p>I utilized computer vision techniques to recognize 12 different guitar chords, either through real-time webcam input or through an uploaded video. I used geometrical features such as finger distance and angles to classify them, and added temporal smoothing, normalization, and noise filtering for accuracy.</p>
+                <p>View the code <a href="https://github.com/BruceSiavichay/guitar-chord-recognizer">here</a>.</p>
+                <h3 class="portfolio-title">Tech Stack</h3>
+                <ul>
+                  <li>Python</li>
+                  <li>OpenCV</li>
+                  <li>MediaPipe</li>
+                </ul>
+                <h3 class="portfolio-title">Screenshots</h3>
+                <img src="/static/assets/img/portfolio/portfolio-8.png" class="img-fluid" alt="">
+                <p style="text-align: center;"><em>Example Image (E Chord)</em></p>
+                <img src="/static/assets/img/portfolio/portfolio-9.png" class="img-fluid" alt="">
+                <p style="text-align: center;"><em>Example Image (C Chord)</em></p>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="/static/assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="/static/assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Background image from Juno Dela Cruz"><i class="bx bx-plus"></i></a>
-                
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="/static/assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="/static/assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Models Made From Blender"><i class="bx bx-plus"></i></a>
-                
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="/static/assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="/static/assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Characters Traced From FireMinstrel"><i class="bx bx-plus"></i></a>
-                
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="/static/assets/img/portfolio/portfolio-4.gif" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="/static/assets/img/portfolio/portfolio-4.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Modelled in Blender (Marble Texture From Polligon)"><i class="bx bx-plus"></i></a>
-                
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="/static/assets/img/portfolio/portfolio-5.gif" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="/static/assets/img/portfolio/portfolio-5.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Modelled in Blender"><i class="bx bx-plus"></i></a>
-                
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="/static/assets/img/portfolio/portfolio-6.gif" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="/static/assets/img/portfolio/portfolio-6.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Modelled in Blender"><i class="bx bx-plus"></i></a>
-                
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="/static/assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="/static/assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Gameplay (Background Art by WallpaperAccess)"><i class="bx bx-plus"></i></a>
-                
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="/static/assets/img/portfolio/portfolio-8.gif" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="/static/assets/img/portfolio/portfolio-8.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Modelled From Blender (Stone Texture From Polligon)"><i class="bx bx-plus"></i></a>
-                
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="/static/assets/img/portfolio/portfolio-9.gif" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="/static/assets/img/portfolio/portfolio-9.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Modelled From Blender (Grass Texture From Polligon)"><i class="bx bx-plus"></i></a>
-                
-              </div>
-            </div>
-          </div>
-
-        </div>
+        
 
       </div>
     </section>
